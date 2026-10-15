@@ -12,7 +12,7 @@ resource "aws_instance" "postgresql" {
     instance_type = "t3.micro"
     vpc_security_group_ids = ["sg-04dce564af1818b33"]
     tags = {
-        name = "postgresql"
+        Name = "postgresql"
     }
 }
 
@@ -21,7 +21,7 @@ resource "aws_instance" "auth-service" {
     instance_type = "t3.micro"
     vpc_security_group_ids = ["sg-04dce564af1818b33"]
     tags = {
-        name = "auth-service"
+        Name = "auth-service"
     }
 }
 
@@ -30,7 +30,7 @@ resource "aws_instance" "portfolio-service" {
     instance_type = "t3.micro"
     vpc_security_group_ids = ["sg-04dce564af1818b33"]
     tags = {
-        name = "portfolio-service"
+        Name = "portfolio-service"
     }
 }
 
@@ -39,6 +39,6 @@ resource "aws_instance" "analytics-service" {
     instance_type = "t3.micro"
     vpc_security_group_ids = ["sg-04dce564af1818b33"]
     tags = {
-        name = "analytics-service"
+        Name = "analytics-service"
     }
 }
